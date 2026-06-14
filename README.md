@@ -46,7 +46,15 @@ git clone (https://github.com/pixiez-dev/threat-intel-agent.git)
 
 ---
 
-### 2. Create Virtual Environment
+### 2. Navigate to threat_intel_agent folder
+
+```bash
+cd threat_intel_agent
+```
+
+---
+
+### 3. Create Virtual Environment
 
 ```bash
 python -m venv venv
@@ -54,7 +62,7 @@ python -m venv venv
 
 ---
 
-### 3. Activate Virtual Environment
+### 4. Activate Virtual Environment
 
 ### Windows
 
@@ -64,7 +72,7 @@ python -m venv venv
 
 ---
 
-### 4. Install Dependencies
+### 5. Install Dependencies
 
 ```bash
 pip install -r requirements2.txt
@@ -72,7 +80,7 @@ pip install -r requirements2.txt
 
 ---
 
-### 5. Environment Configuration
+### 6. Environment Configuration
 
 Create a `.env` file from the .env.exmaple. 
 
