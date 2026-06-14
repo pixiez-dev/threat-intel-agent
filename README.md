@@ -41,8 +41,7 @@ The provider is selected in env file for cli and web streamlit using the drop-dw
 ### 1. Clone Repository (if using zip file, skip this part)
 
 ```bash
-git clone (https://github.com/pixiez-dev/Threat-Intelligence-Analyst.git)
-cd threat_intel_agent
+git clone (https://github.com/pixiez-dev/threat-intel-agent.git)
 ```
 
 ---
@@ -68,7 +67,7 @@ python -m venv venv
 ### 4. Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements2.txt
 ```
 
 ---
