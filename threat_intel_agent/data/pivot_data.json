@@ -1,0 +1,43 @@
+{
+  "45.83.122.10": {
+    "asn": "AS9009",
+    "confidence": 0.85,
+    "country": "RU",
+    "domains": [
+      "evil-domain.com",
+      "malware-host.net",
+      "cdn-redirect.example"
+    ],
+    "notes": "Representative malicious infrastructure sample used for demo pivoting."
+  },
+  "198.51.100.30": {
+    "asn": "AS64500",
+    "confidence": 0.91,
+    "country": "US",
+    "domains": [
+      "phish-portal.net",
+      "mail-drop.example"
+    ],
+    "notes": "Suspicious infrastructure observed in phishing and credential harvesting campaigns."
+  },
+  "203.0.113.55": {
+    "asn": "AS64511",
+    "confidence": 0.78,
+    "country": "NL",
+    "domains": [
+      "c2-sink.example",
+      "update-relay.example"
+    ],
+    "notes": "Commonly used for command-and-control and malware staging traffic."
+  },
+  "8.8.8.8": {
+    "asn": "AS15169",
+    "confidence": 0.35,
+    "country": "US",
+    "domains": [
+      "google.com",
+      "dns.google"
+    ],
+    "notes": "Known-good public DNS service used as a control example."
+  }
+}

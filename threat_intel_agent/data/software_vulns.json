@@ -1,0 +1,51 @@
+{
+  "Confluence 7.13": {
+    "cve": "CVE-2022-26134",
+    "severity": "Critical",
+    "description": "OGNL Injection Remote Code Execution in Confluence Server and Data Center.",
+    "confidence": 0.95,
+    "impact": "Remote code execution and authentication bypass risk for internet-exposed instances."
+  },
+  "Confluence 7.13.7": {
+    "cve": "CVE-2024-21683",
+    "severity": "High",
+    "description": "Authentication bypass and privilege escalation in Confluence Server and Data Center.",
+    "confidence": 0.91,
+    "impact": "Attackers may gain administrative access through vulnerable endpoints."
+  },
+  "Exchange 2019": {
+    "cve": "CVE-2021-26855",
+    "severity": "Critical",
+    "description": "ProxyLogon chain affecting Microsoft Exchange Server.",
+    "confidence": 0.96,
+    "impact": "Remote code execution and mailbox compromise on vulnerable Exchange servers."
+  },
+  "Exchange 2019 CU12": {
+    "cve": "CVE-2024-21410",
+    "severity": "High",
+    "description": "Privilege escalation and Outlook-related vulnerability affecting Microsoft Exchange environments.",
+    "confidence": 0.88,
+    "impact": "May allow unauthorized access to sensitive mail and configuration data."
+  },
+  "FortiGate 7.2.0": {
+    "cve": "CVE-2024-21762",
+    "severity": "Critical",
+    "description": "Heap-based buffer overflow in FortiOS SSL-VPN.",
+    "confidence": 0.97,
+    "impact": "Unauthenticated remote code execution risk on internet-facing VPN gateways."
+  },
+  "Ivanti Connect Secure 22.7R2.3": {
+    "cve": "CVE-2023-46805 / CVE-2024-21887",
+    "severity": "Critical",
+    "description": "Authentication bypass and command injection affecting Ivanti Connect Secure.",
+    "confidence": 0.94,
+    "impact": "Commonly chained for initial access to remote access infrastructure."
+  },
+  "Apache Log4j 2.14.1": {
+    "cve": "CVE-2021-44228",
+    "severity": "Critical",
+    "description": "Remote code execution vulnerability in Apache Log4j 2.",
+    "confidence": 0.99,
+    "impact": "Widely exploited for remote code execution in Java applications."
+  }
+}

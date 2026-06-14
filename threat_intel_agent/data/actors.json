@@ -1,0 +1,57 @@
+{
+  "APT29": {
+    "aliases": ["Cozy Bear"],
+    "description": "Russian state-sponsored threat actor known for long-running espionage operations and credential theft.",
+    "confidence": 0.92,
+    "ttps": [
+      {"id": "T1566", "name": "Phishing"},
+      {"id": "T1059", "name": "Command and Scripting Interpreter"},
+      {"id": "T1078", "name": "Valid Accounts"},
+      {"id": "T1547", "name": "Boot or Logon Autostart Execution"}
+    ]
+  },
+  "APT28": {
+    "aliases": ["Fancy Bear"],
+    "description": "Russian cyber espionage group frequently linked to spear-phishing, credential access, and strategic operations.",
+    "confidence": 0.88,
+    "ttps": [
+      {"id": "T1566", "name": "Phishing"},
+      {"id": "T1190", "name": "Exploit Public-Facing Application"},
+      {"id": "T1078", "name": "Valid Accounts"},
+      {"id": "T1003", "name": "OS Credential Dumping"}
+    ]
+  },
+  "FIN7": {
+    "aliases": ["Carbon Spider"],
+    "description": "Financially motivated cybercriminal group associated with point-of-sale intrusions and ransomware delivery.",
+    "confidence": 0.85,
+    "ttps": [
+      {"id": "T1566", "name": "Phishing"},
+      {"id": "T1059", "name": "Command and Scripting Interpreter"},
+      {"id": "T1190", "name": "Exploit Public-Facing Application"},
+      {"id": "T1486", "name": "Data Encrypted for Impact"}
+    ]
+  },
+  "Lazarus Group": {
+    "aliases": ["Hidden Cobra"],
+    "description": "North Korean state-sponsored actor known for destructive operations, financial theft, and long-running campaigns.",
+    "confidence": 0.9,
+    "ttps": [
+      {"id": "T1190", "name": "Exploit Public-Facing Application"},
+      {"id": "T1059", "name": "Command and Scripting Interpreter"},
+      {"id": "T1588", "name": "Obtain Capabilities"},
+      {"id": "T1486", "name": "Data Encrypted for Impact"}
+    ]
+  },
+  "MuddyWater": {
+    "aliases": ["Seedworm"],
+    "description": "Iranian cyber threat actor that has been observed using phishing, remote access tools, and web shell deployments.",
+    "confidence": 0.83,
+    "ttps": [
+      {"id": "T1566", "name": "Phishing"},
+      {"id": "T1505", "name": "Server Software Component"},
+      {"id": "T1105", "name": "Ingress Tool Transfer"},
+      {"id": "T1078", "name": "Valid Accounts"}
+    ]
+  }
+}
