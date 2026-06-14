@@ -4,6 +4,7 @@ import os
 import sys
 import json
 from pathlib import Path
+from security.prompt_guard import detect_injection
 
 # Force the directory into python workspace memory paths
 PROJECT_ROOT = Path(__file__).resolve().parent
@@ -136,13 +137,28 @@ if app_view == "Analyst Chat Portal":
             with st.chat_message("user"):
                 st.write(user_query)
 
-            with st.spinner("Invoking agents..."):
-                agent_response = run_agent(user_query)
+            # 1. 🛡️ INTERCEPT WITH PROMPT GUARD LAYER BEFORE RUNNING THE AGENT
+            is_blocked, block_message = detect_injection(user_query)
 
-            # Render and refresh chat turns
-            with st.chat_message("assistant", avatar="🤖"):
-                st.write(agent_response)
-            st.rerun()
+            if is_blocked:
+                # If flagged as malicious, display the security warning in the chat UI
+                with st.chat_message("assistant", avatar="🛡️"):
+                    st.error(block_message)
+                
+                # Append the system block message directly to the session memory so it saves in chat history logs
+                memory.add_user_message(user_query)
+                memory.add_ai_message(block_message)
+                st.rerun()
+                
+            else:
+                # 2. ✅ Safe query: Proceed to invoke agents normally
+                with st.spinner("Invoking agents..."):
+                    agent_response = run_agent(user_query)
+
+                # Render and refresh chat turns
+                with st.chat_message("assistant", avatar="🤖"):
+                    st.write(agent_response)
+                st.rerun()
 
 # ===================================================
 # VIEW 2: SYSTEM VALIDATION SUITE (MANUAL PIACED HARNESS)
